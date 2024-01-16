@@ -24,8 +24,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 public class Juego extends AppCompatActivity{
-    public Juego() {
-    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

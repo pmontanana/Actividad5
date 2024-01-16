@@ -32,10 +32,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
-        Intent actividad2 = new Intent(this, Juego.class);
 
         Button salirp = (Button) findViewById(R.id.btnCerrar);
-        Button iniciarJ = (Button) findViewById(R.id.btnIniciar);
+        Button iniciarJ = findViewById(R.id.btnIniciar);
+
+        iniciarJ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent actividad2 = new Intent(getApplicationContext(), Juego.class);
+                startActivity(actividad2);
+            }
+
+
+        });
         salirp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,14 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        iniciarJ.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                actividad2.addCategory(Intent.CATEGORY_HOME);
-                actividad2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(actividad2);
-            }
-        });
+
 
     }
 }
