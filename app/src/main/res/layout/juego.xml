@@ -1,6 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:stretchColumns="0, 1, 2"
+    android:weightSum="3"
+    android:id="@+id/bgjuego">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:text="Haz tres en ralla para ganar"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+
+    <TableRow>
+
+        <Button android:id="@+id/boton00" />
+
+        <Button android:id="@+id/boton01" />
+
+        <Button android:id="@+id/boton02" />
+    </TableRow>
+    <TableRow>
+
+        <Button android:id="@+id/boton10" />
+
+        <Button android:id="@+id/boton11" />
+
+        <Button android:id="@+id/boton12" />
+    </TableRow>
+    <TableRow>
+
+        <Button android:id="@+id/boton20" />
+
+        <Button android:id="@+id/boton21" />
+
+        <Button android:id="@+id/boton22" />
+    </TableRow>
+</TableLayout>

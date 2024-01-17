@@ -3,6 +3,7 @@ package com.example.actividad5;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.example.actividad5.databinding.JuegoBinding;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
+import androidx.core.util.AndroidXConsumerKt;
 import androidx.core.view.WindowCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -22,10 +24,11 @@ import androidx.navigation.ui.NavigationUI;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.FrameLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    private AppBarConfiguration appBarConfiguration;
+    private AppBarConfiguration barra;
 
 
     @Override
@@ -35,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button salirp = (Button) findViewById(R.id.btnCerrar);
         Button iniciarJ = findViewById(R.id.btnIniciar);
+        View lay = findViewById(R.id.bgr);
+        lay.setBackgroundColor(Color.parseColor("#00AAFF"));
+
 
         iniciarJ.setOnClickListener(new View.OnClickListener() {
             @Override
