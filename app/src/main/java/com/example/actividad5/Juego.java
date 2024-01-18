@@ -1,63 +1,87 @@
 package com.example.actividad5;
 
-import android.app.Activity;
-import android.app.Application;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
-import androidx.core.view.WindowCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
+import android.widget.TextView;
+import android.widget.Toast;
 
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.TableLayout;
+import org.w3c.dom.Text;
+
+import java.util.Arrays;
 
 public class Juego extends AppCompatActivity{
 
-    private Button boton00 = (Button) findViewById(R.id.boton00);
-    private Button boton01 = (Button) findViewById(R.id.boton01);
-    private Button boton02 = (Button) findViewById(R.id.boton02);
-    private Button boton10 = (Button) findViewById(R.id.boton10);
-    private Button boton11 = (Button) findViewById(R.id.boton11);
-    private Button boton12 = (Button) findViewById(R.id.boton12);
-    private Button boton20 = (Button) findViewById(R.id.boton20);
-    private Button boton21 = (Button) findViewById(R.id.boton21);
-    private Button boton22 = (Button) findViewById(R.id.boton22);
 
+    int[] tabla = new int[]{
+            0,0,0,
+            0,0,0,
+            0,0,0
+    };
+    TextView textWin;
+    Integer[] matriz ;
+
+    TextView pruebita;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.juego);
+        setContentView(R.layout.juego_tr);
 
-        TableLayout lay = (TableLayout) findViewById(R.id.bgjuego);
+        View lay = (View) findViewById(R.id.bgjuego);
         lay.setBackgroundColor(Color.parseColor("#BBAAFF"));
 
-        int[][] matriz = new int[3][3];
-        matriz[1][1] = 1;
+        textWin = (TextView) findViewById(R.id.textWin);
+        textWin.setVisibility(View.INVISIBLE);
 
-        comprobar(matriz);
+        matriz = new Integer[]{
+                R.id.boton00, R.id.boton01, R.id.boton02, R.id.boton10, R.id.boton11, R.id.boton12, R.id.boton20, R.id.boton21, R.id.boton22
+        };
+
+        pruebita = (TextView) findViewById(R.id.pruebita);
+
+
     }
 
-    public static void comprobar(int[][] matriz) {
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(matriz[i][j] + " ");
+    public void escribir(View vw){
+        boolean jugador = true;
+        int botonPulsado = 0;
+        boolean fin = true;
+        int casillas = 0;
+        String holia;
+
+
+        while(fin){
+            if (botonPulsado == 0){
+                botonPulsado = Arrays.asList(matriz).indexOf(vw.getId());
+                vw.setBackgroundResource(R.drawable.star);
+                if (tabla[casillas] != 1) {
+                    tabla[botonPulsado] = 1;
+                }
             }
-            System.out.println("");
+
+                casillas++;
+                if (casillas >= 5){
+                    fin = false;
+                }
+
+
+            }
+
+
+
         }
+
+
+
+
     }
-}
+
+
+
+

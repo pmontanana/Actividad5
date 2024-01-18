@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
-import com.example.actividad5.databinding.JuegoBinding;
+import com.example.actividad5.databinding.JuegoTrBinding;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.menu);
 
         Button salirp = (Button) findViewById(R.id.btnCerrar);
-        Button iniciarJ = findViewById(R.id.btnIniciar);
+        Button iniciarJ = (Button) findViewById(R.id.btnIniciar);
         View lay = findViewById(R.id.bgr);
         lay.setBackgroundColor(Color.parseColor("#00AAFF"));
 
