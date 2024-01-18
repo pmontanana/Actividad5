@@ -14,6 +14,7 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Juego extends AppCompatActivity{
 
@@ -54,23 +55,24 @@ public class Juego extends AppCompatActivity{
         boolean fin = true;
         int casillas = 0;
         String holia;
-
+        int[] botnpuls = new int[9];
+        Random ran = new Random();
+        int pos = ran.nextInt(tabla.length);
 
         while(fin){
-            if (botonPulsado == 0){
-                botonPulsado = Arrays.asList(matriz).indexOf(vw.getId());
-                vw.setBackgroundResource(R.drawable.star);
-                if (tabla[casillas] != 1) {
-                    tabla[botonPulsado] = 1;
-                }
-            }
 
+                botonPulsado = Arrays.asList(matriz).indexOf(vw.getId());
+                if (botonPulsado == 1){
+                    break;
+                }
+                vw.setBackgroundResource(R.drawable.star);
+                tabla[botonPulsado] = 1;
                 casillas++;
                 if (casillas >= 5){
                     fin = false;
                 }
 
-
+            botnpuls = new int[botonPulsado];
             }
 
 
@@ -78,9 +80,16 @@ public class Juego extends AppCompatActivity{
         }
 
 
-
+    //public int comprobador(int matriz){
+    //    for (int i = 0; i< matriz.length;i++){
+    //        return new int[]{matriz[i]};
+    //
+    //    }
+    //}
 
     }
+
+
 
 
 
