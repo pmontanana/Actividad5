@@ -144,18 +144,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textJug2"
-        android:layout_width="276dp"
-        android:layout_height="38dp"
-        android:text="Turno del jugador 2"
-        android:textAlignment="center"
-        android:textSize="23sp"
-        app:layout_constraintBottom_toTopOf="@+id/boton01"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btnReset"
         style="@style/Widget.AppCompat.Button"
