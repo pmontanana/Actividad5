@@ -6,25 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textWin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Has vencido"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/pruebita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="6dp" />
-
     <ToggleButton
         android:id="@+id/boton12"
         android:layout_width="0dp"
@@ -150,5 +131,40 @@
         app:layout_constraintEnd_toStartOf="@+id/boton12"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/boton10" />
+
+    <TextView
+        android:id="@+id/textJug1"
+        android:layout_width="276dp"
+        android:layout_height="38dp"
+        android:text="Turno del jugador 1"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/boton01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textJug2"
+        android:layout_width="276dp"
+        android:layout_height="38dp"
+        android:text="Turno del jugador 2"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/boton01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReset"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="reiniciar"
+        android:text="Volver a empezar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
