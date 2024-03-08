@@ -7,24 +7,24 @@
     android:layout_height="match_parent">
 
     <ToggleButton
-        android:id="@+id/boton12"
+        android:id="@+id/boton02"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:onClick="poner"
         android:textOff=" "
         android:textOn=" "
-        app:layout_constraintBottom_toTopOf="@+id/boton22"
+        app:layout_constraintBottom_toTopOf="@+id/boton12"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/boton11" />
+        app:layout_constraintStart_toEndOf="@+id/boton01" />
 
     <ToggleButton
         android:id="@+id/boton00"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="16dp"
         android:onClick="poner"
         android:textOff=" "
         android:textOn=" "
@@ -38,7 +38,7 @@
         android:id="@+id/boton01"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="16dp"
         android:onClick="poner"
         android:textOff=" "
         android:textOn=" "
@@ -49,24 +49,10 @@
         app:layout_constraintStart_toEndOf="@+id/boton00" />
 
     <ToggleButton
-        android:id="@+id/boton02"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="12dp"
-        android:onClick="poner"
-        android:textOff=" "
-        android:textOn=" "
-        app:layout_constraintBottom_toTopOf="@+id/boton12"
-        app:layout_constraintDimensionRatio="w,1:1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/boton01" />
-
-    <ToggleButton
         android:id="@+id/boton10"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="4dp"
         android:onClick="poner"
         android:textOff=" "
         android:textOn=" "
@@ -77,10 +63,38 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ToggleButton
+        android:id="@+id/boton11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="poner"
+        android:textOff=" "
+        android:textOn=" "
+        app:layout_constraintBottom_toTopOf="@+id/boton21"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/boton12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton10" />
+
+    <ToggleButton
+        android:id="@+id/boton12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="poner"
+        android:textOff=" "
+        android:textOn=" "
+        app:layout_constraintBottom_toTopOf="@+id/boton22"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton11" />
+
+    <ToggleButton
         android:id="@+id/boton20"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="88dp"
         android:onClick="poner"
         android:textOff=" "
         android:textOn=" "
@@ -94,7 +108,7 @@
         android:id="@+id/boton21"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="88dp"
         android:onClick="poner"
         android:textOff=" "
         android:textOn=" "
@@ -108,7 +122,7 @@
         android:id="@+id/boton22"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="88dp"
         android:onClick="poner"
         android:textOff=" "
         android:textOn=" "
@@ -117,20 +131,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/boton21" />
-
-    <ToggleButton
-        android:id="@+id/boton11"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="poner"
-        android:textOff=" "
-        android:textOn=" "
-        app:layout_constraintBottom_toTopOf="@+id/boton21"
-        app:layout_constraintDimensionRatio="w,1:1"
-        app:layout_constraintEnd_toStartOf="@+id/boton12"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/boton10" />
 
     <TextView
         android:id="@+id/textJug1"

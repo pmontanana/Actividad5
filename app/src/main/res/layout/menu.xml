@@ -10,7 +10,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="TRES EN RALLA"
+            android:text="TRES EN RAYA"
             android:textAlignment="center"
             android:textSize="40dp"
             tools:ignore="MissingConstraints" />

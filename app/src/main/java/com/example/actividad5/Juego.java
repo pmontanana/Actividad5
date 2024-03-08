@@ -99,36 +99,24 @@ public class Juego extends AppCompatActivity{
 
     public boolean condicionVictoria(int jugador){
 
-        //filas
-        for (int i = 0; i< 9; i+=3){
-            if (tabla[i] == jugador && tabla[i+1] == jugador && tabla[i+2] == jugador){
-                botones[i].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
-                botones[i+1].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
-                botones[i+2].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
+        int[] condiciones = new int[] {
+                0, 1, 2,
+                3, 4, 5,
+                6, 7, 8,
+                0, 3, 6,
+                1, 4, 7,
+                2, 5, 8,
+                0, 4, 8,
+                2, 4, 6
+        };
+
+        for (int i = 0; i < 24; i+=3){
+            if (tabla[condiciones[i]] == jugador && tabla[condiciones[i+1]] == jugador && tabla[condiciones[i+2]] == jugador) {
+                botones[condiciones[i]].setBackgroundResource(jugador == 1 ? R.drawable.starwin : R.drawable.moonwin);
+                botones[condiciones[i+1]].setBackgroundResource(jugador == 1 ? R.drawable.starwin : R.drawable.moonwin);
+                botones[condiciones[i+2]].setBackgroundResource(jugador == 1 ? R.drawable.starwin : R.drawable.moonwin);
                 return true;
             }
-        }
-        //columnas
-        for (int i = 0; i< 3; i++){
-            if (tabla[i] == jugador && tabla[i+3] == jugador && tabla[i+6] == jugador){
-                botones[i].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
-                botones[i+3].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
-                botones[i+6].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
-                return true;
-            }
-        }
-        //diagonales
-        if (tabla[0] == jugador && tabla[4] == jugador && tabla[8] == jugador){
-            botones[0].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
-            botones[4].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
-            botones[8].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
-            return true;
-        }
-        if (tabla[2] == jugador && tabla[4] == jugador && tabla[6] == jugador){
-            botones[2].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
-            botones[4].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
-            botones[6].setBackgroundResource(jugador == 1 ? R.drawable.starwin: R.drawable.moonwin);
-            return true;
         }
         return false;
     }
