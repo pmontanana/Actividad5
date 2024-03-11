@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "562477621921",
+    "project_id": "proyectofinalepmdm",
+    "storage_bucket": "proyectofinalepmdm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562477621921:android:3853dd44e06476fc5dc6e0",
+        "android_client_info": {
+          "package_name": "com.company.proyectoF"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPg5B3o8wgom-waLvb83KStH3zayJSpwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562477621921:android:3c300b33d65a036f5dc6e0",
+        "android_client_info": {
+          "package_name": "com.example.actividad5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPg5B3o8wgom-waLvb83KStH3zayJSpwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="Juego">
+      <entry key="app">
         <State>
           <targetSelectedWithDropDown>
             <Target>
@@ -10,19 +10,13 @@
               <deviceKey>
                 <Key>
                   <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="$USER_HOME$/.var/app/com.google.AndroidStudio/config/.android/avd/Pixel_6_Pro_API_24.avd" />
+                  <value value="C:\Users\pmont\.android\avd\Nexus_5_API_29.avd" />
                 </Key>
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-01-18T20:53:05.329992055Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-03-10T23:17:20.459154100Z" />
         </State>
-      </entry>
-      <entry key="MainActivity">
-        <State />
-      </entry>
-      <entry key="app">
-        <State />
       </entry>
     </value>
   </component>

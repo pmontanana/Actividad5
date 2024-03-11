@@ -1,32 +1,19 @@
 package com.example.actividad5;
 
-import android.app.Activity;
-import android.app.Application;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-
-import com.example.actividad5.databinding.JuegoTrBinding;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
-import androidx.core.util.AndroidXConsumerKt;
-import androidx.core.view.WindowCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.FrameLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class Menu_Principal extends AppCompatActivity {
 
     private AppBarConfiguration barra;
 
@@ -38,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button salirp = (Button) findViewById(R.id.btnCerrar);
         Button iniciarJ = (Button) findViewById(R.id.btnIniciar);
+        Button login = (Button) findViewById(R.id.loginbtn);
         View lay = findViewById(R.id.bgr);
         lay.setBackgroundColor(Color.parseColor("#00AAFF"));
 
@@ -62,7 +50,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+//        login.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent login = new Intent(getApplicationContext(), Login.class);
+//                startActivity(login);
+//            }
+//
+//
+//        });
 
     }
 }
