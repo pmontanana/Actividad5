@@ -26,6 +26,7 @@ public class Menu_Principal extends AppCompatActivity {
         Button salirp = (Button) findViewById(R.id.btnCerrar);
         Button iniciarJ = (Button) findViewById(R.id.btnIniciar);
         Button login = (Button) findViewById(R.id.loginbtn);
+        Button instr = findViewById(R.id.btnInstrucciones);
         View lay = findViewById(R.id.bgr);
         lay.setBackgroundColor(Color.parseColor("#00AAFF"));
 
@@ -47,6 +48,13 @@ public class Menu_Principal extends AppCompatActivity {
                 intent.addCategory(Intent.CATEGORY_HOME);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
+            }
+        });
+
+        instr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 

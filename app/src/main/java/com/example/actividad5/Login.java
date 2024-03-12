@@ -14,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -49,14 +51,14 @@ public class Login extends AppCompatActivity {
                                 .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                                     @Override
                                     public void onSuccess(AuthResult authResult) {
-                                        Toast.makeText(Login.this, "Sesion Iniciada", Toast.LENGTH_SHORT).show();
+                                        Snackbar.make(getCurrentFocus(), "Sesion iniciada", BaseTransientBottomBar.LENGTH_SHORT).show();
                                         startActivity(new Intent(Login.this, Menu_Principal.class));
                                         finish();
                                     }
                                 }).addOnFailureListener(new OnFailureListener() {
                                     @Override
                                     public void onFailure(@NonNull Exception e) {
-                                        Toast.makeText(Login.this, "Inicio de sesion fallido", Toast.LENGTH_SHORT).show();
+                                        Snackbar.make(getCurrentFocus(), "Inicio de sesion fallido", BaseTransientBottomBar.LENGTH_SHORT).show();
                                     }
                                 });
                     } else {
