@@ -5,6 +5,13 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.NOTIFICATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +23,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Actividad5"
         tools:targetApi="31">
+        <activity
+            android:name=".Instrucciones"
+            android:exported="false"
+            android:label="@string/title_activity_instrucciones"
+            android:theme="@style/Theme.Actividad5.NoActionBar" />
 
         <activity
             android:name=".SignUp"
@@ -40,6 +52,5 @@
 
         </activity>
     </application>
-
 
 </manifest>

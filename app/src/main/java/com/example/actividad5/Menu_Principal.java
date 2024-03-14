@@ -54,7 +54,7 @@ public class Menu_Principal extends AppCompatActivity {
         instr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(Menu_Principal.this, Instrucciones.class));
             }
         });
 

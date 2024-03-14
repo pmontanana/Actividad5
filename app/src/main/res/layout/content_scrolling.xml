@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Instrucciones"
+    tools:showIn="@layout/activity_instrucciones">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="El tres en línea, también conocido \ncomo ceros y cruces, tres en raya (España, México, \nEcuador y Bolivia), cerito cruz (en Cuba), \nmichi (en Perú), \ntriqui (en Colombia), cuadritos, juego del gato, gato (en Chile, Costa Rica y México), \ntatetí (en Argentina, Paraguay y Uruguay), totito (en Guatemala), triqui traka, equis cero (en Honduras), o la vieja (en Venezuela) \nes un juego de \nlápiz y papel \nentre dos jugadores: O y X, que marcan \nlos espacios de un tablero de 3×3 alternadamente.
+
+Una partida ganada por el primer jugador, X:
+
+
+Partida de tres en raya, ganada por X.
+Una partida que termina en empate:
+
+
+Partida de tres en raya, empatada.
+Los jugadores no tardan en descubrir que el juego perfecto termina en empate sin importar con qué juega el primer jugador. Normalmente son los niños pequeños los que juegan al tres en raya: cuando ya han descubierto una estrategia imbatible se pasan a juegos más sofisticados, como el de puntos y cajas. \n\n\nReglas
+Cada jugador solo debe colocar su símbolo una vez por turno y no debe ser sobre una casilla ya jugada. En caso de que el jugador haga trampa el ganador será el otro. Se debe conseguir realizar una línea recta o diagonal por símbolo." />
+
+</androidx.core.widget.NestedScrollView>
