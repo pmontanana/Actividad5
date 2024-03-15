@@ -1,6 +1,8 @@
 package com.example.actividad5;
 
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
@@ -14,14 +16,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.actividad5.databinding.ActivityInstruccionesBinding;
 
 public class Instrucciones extends AppCompatActivity {
 
+    Button btnVolver;
+    Context context;
     private ActivityInstruccionesBinding binding;
 
+    //EasterEgg😉😉
     private void generarCuadroDialogo() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setTitle("Ubicacion Actual");
@@ -44,6 +50,8 @@ public class Instrucciones extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        context = this;
+        btnVolver = findViewById(R.id.btnVolver);
 
         binding = ActivityInstruccionesBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -60,5 +68,13 @@ public class Instrucciones extends AppCompatActivity {
                 generarCuadroDialogo();
             }
         });
+
+
     }
+
+    public void volver(View vw) {
+        startActivity(new Intent(this, Menu_Principal.class));
+    }
+
+
 }

@@ -14,6 +14,7 @@
         android:fitsSystemWindows="true"
         android:theme="@style/Theme.Actividad5.AppBarOverlay">
 
+
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
             style="@style/Widget.MaterialComponents.Toolbar.Primary"
@@ -23,6 +24,13 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:toolbarId="@+id/toolbar">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="volver"
+                android:text="Volver al menú" />
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"

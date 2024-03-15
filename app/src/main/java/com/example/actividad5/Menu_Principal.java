@@ -58,15 +58,15 @@ public class Menu_Principal extends AppCompatActivity {
             }
         });
 
-//        login.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent login = new Intent(getApplicationContext(), Login.class);
-//                startActivity(login);
-//            }
-//
-//
-//        });
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent login = new Intent(getApplicationContext(), Login.class);
+                startActivity(login);
+            }
+
+
+        });
 
     }
 }
